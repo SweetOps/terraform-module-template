@@ -1,6 +1,8 @@
-name: Release Notary
-on: release
-
+name: Release
+on:
+  push:
+    tags:
+      - "v*"
 jobs:
   release-notary:
     name: Release-notary
