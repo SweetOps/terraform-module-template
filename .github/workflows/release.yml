@@ -9,9 +9,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v1
 
-      - name: Release notary
-        uses: docker://commitsar/release-notary:v0.8.0
-        with:
-          args: release-notary publish
+      - name: Release Notary Action
+        uses: commitsar-app/release-notary@v0.8.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
