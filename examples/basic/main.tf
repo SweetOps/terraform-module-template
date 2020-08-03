@@ -1,5 +1,5 @@
 module "aweasome_module" {
-  source    = "git::"
+  source    = "../../"
   name      = "aweasome"
   stage     = "production"
   namespace = "sweetops"

@@ -14,5 +14,8 @@ module "your_aweasome_resource" {
 }
 ```
 
+<!--- BEGIN_TF_DOCS --->
+<!--- END_TF_DOCS --->
+
 ## License
 The Apache-2.0 license
