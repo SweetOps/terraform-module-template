@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - mame: Lint PR
+      - name: Lint PR
         uses: aslafy-z/conventional-pr-title-action@master
         with:
           preset: conventional-changelog-angular@^5.0.6
