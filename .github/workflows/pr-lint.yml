@@ -11,8 +11,8 @@ jobs:
   main:
     runs-on: ubuntu-latest
 
-    steps: Lint PR
-      - mame:
+    steps:
+      - mame: Lint PR
         uses: aslafy-z/conventional-pr-title-action@master
         with:
           preset: conventional-changelog-angular@^5.0.6
@@ -26,7 +26,7 @@ jobs:
           issue-number: ${{tojson(github.event.number)}}
         body: |
           Please ensure your PR conforms to conventional commits (see https://www.conventionalcommits.org).
-          
+
           Commits MUST be prefixed with a type, which consists of one of the following:
 
           * **build**: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
