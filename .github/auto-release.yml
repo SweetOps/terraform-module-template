@@ -29,14 +29,23 @@ version-resolver:
 categories:
 - title: '🚀 Enhancements'
   labels:
+  - 'minor'
   - 'enhancement'
-  - 'patch'
+  - 'feat'
 - title: '🐛 Bug Fixes'
   labels:
+  - 'auto-update'
+  - 'patch'
   - 'fix'
   - 'bugfix'
   - 'bug'
   - 'hotfix'
+  - 'refactor'
+  - 'ci'
+  - 'build'
+  - 'docs'
+  - 'test'
+  - 'chore'
 - title: '🤖 Automatic Updates'
   labels:
   - 'auto-update'
