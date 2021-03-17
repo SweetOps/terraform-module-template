@@ -4,6 +4,9 @@ labels:
   - label: "feat"
     matcher:
       title: "^feat:.*"
+  - label: "fix"
+    matcher:
+      title: "^fix:.*"
   - label: "ci"
     matcher:
       title: "^ci:.*"
