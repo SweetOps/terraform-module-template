@@ -1,4 +1,6 @@
 ---
+name: Sync labels
+
 on:
   push:
     branches:

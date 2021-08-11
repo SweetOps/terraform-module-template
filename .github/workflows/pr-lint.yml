@@ -1,3 +1,5 @@
+name: PR title conformance
+
 on:
   pull_request_target:
 
