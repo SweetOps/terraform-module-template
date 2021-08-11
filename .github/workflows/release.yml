@@ -3,8 +3,9 @@ name: Release Drafter
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - master
+      - main
 
 jobs:
   publish:
