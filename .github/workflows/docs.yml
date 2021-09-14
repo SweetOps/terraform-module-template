@@ -18,7 +18,7 @@ jobs:
         config-file: ".terraform-docs.yml"
 
     - name: Render terraform docs inside the examples/basic/README.md
-      uses: Dirrk/terraform-docs@v1.0.8
+      uses: terraform-docs/gh-actions@v0.11.0
       with:
         working-dir: ./examples/basic/
         git-push: "true"
