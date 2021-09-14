@@ -15,7 +15,7 @@ jobs:
       with:
         working-dir: ./examples/basic/
         git-push: "false"
-        output-file: examples/basic/README.md
+        output-file: README.md
         output-method: replace
         config-file: ".terraform-docs.yml"
 
