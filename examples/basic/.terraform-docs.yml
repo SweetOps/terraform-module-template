@@ -4,7 +4,6 @@ output:
   file: README.md
   mode: replace
   template: |-
-
     ## Usage
 
     ```hcl
