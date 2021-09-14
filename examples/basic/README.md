@@ -1,18 +1,41 @@
-<!--- BEGIN_TF_DOCS --->
+## Usage
+
+```hcl
+module "your_aweasome_resource" {
+  source    = ""
+  namespace = "sweetops"
+  stage     = "production"
+  name      = "aweasome"
+}
+```
+
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-No provider.
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_aweasome_module"></a> [aweasome\_module](#module\_aweasome\_module) | ../../ | n/a |
+
+## Resources
+
+No resources.
 
 ## Inputs
 
-No input.
+No inputs.
 
 ## Outputs
 
-No output.
+No outputs.
+<!-- END_TF_DOCS --> 
 
-<!--- END_TF_DOCS --->
+## License
+The Apache-2.0 license
