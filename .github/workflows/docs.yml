@@ -10,20 +10,16 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.ref }}
 
-    - name: main docs
-      uses: Dirrk/terraform-docs@v1.0.8
+    - name: Render terraform docs inside the README.md
+      uses: terraform-docs/gh-actions@v0.11.0
       with:
-        tf_docs_working_dir: .
-        tf_docs_output_file: README.md
-        tf_docs_output_method: inject
-        tf_docs_git_push: 'true'
-        tf_docs_args: '--sort-inputs-by-required'
+        working-dir: .
+        git-push: "true"
+        config-file: ".terraform-docs.yml"
 
-    - name: basic example docs
+    - name: Render terraform docs inside the examples/basic/README.md
       uses: Dirrk/terraform-docs@v1.0.8
       with:
-        tf_docs_working_dir: ./examples/basic/
-        tf_docs_output_file: README.md
-        tf_docs_output_method: inject
-        tf_docs_git_push: 'true'
-        tf_docs_args: '--sort-inputs-by-required'
+        working-dir: ./examples/basic/
+        git-push: "true"
+        config-file: ".terraform-docs.yml"
