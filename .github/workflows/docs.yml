@@ -16,6 +16,7 @@ jobs:
       with:
         working-dir: ./examples/basic/
         git-push: "false"
+        output-file: README.md
         config-file: ".terraform-docs.yml"
 
     - name: Render terraform docs inside the README.md
@@ -23,4 +24,5 @@ jobs:
       with:
         working-dir: .
         git-push: "true"
+        output-file: README.md
         config-file: ".terraform-docs.yml"
