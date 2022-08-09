@@ -15,12 +15,6 @@ content: |-
 output:
   file: README.md
   mode: replace
-  # content: |-
-  #   ## Usage
-
-  #   ```hcl
-  #   {{ include "examples/basic/main.tf" }}
-  #   ```
   template: |-
     # terraform-module-template
 
