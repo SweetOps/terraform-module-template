@@ -4,19 +4,9 @@ output:
   file: README.md
   mode: replace
   template: |-
-    ## Usage
-
-    ```hcl
-    {{ include "examples/basic/main.tf" }}
-    ```
-
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
-    <!-- END_TF_DOCS --> 
-
-    ## License
-    The Apache-2.0 license
-
+    <!-- END_TF_DOCS -->
 sort:
   enabled: true
   by: required
