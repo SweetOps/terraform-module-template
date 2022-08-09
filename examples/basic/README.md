@@ -1,14 +1,3 @@
-## Usage
-
-```hcl
-module "your_aweasome_resource" {
-  source    = ""
-  namespace = "sweetops"
-  stage     = "production"
-  name      = "aweasome"
-}
-```
-
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
@@ -35,7 +24,4 @@ No inputs.
 ## Outputs
 
 No outputs.
-<!-- END_TF_DOCS --> 
-
-## License
-The Apache-2.0 license
+<!-- END_TF_DOCS -->
