@@ -1,35 +1,31 @@
-## Usage
-
-```hcl
-module "your_aweasome_resource" {
-  source    = ""
-  namespace = "sweetops"
-  stage     = "production"
-  name      = "aweasome"
-}
-```
+# terraform-module-template
 
 <!-- BEGIN_TF_DOCS -->
+## Usage
+```hcl
+module "aweasome_module" {
+  source    = "../../"
+  name      = "aweasome"
+  stage     = "production"
+  namespace = "sweetops"
+}
+```
 ## Requirements
 
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-
 ## Providers
 
 No providers.
-
 ## Modules
 
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_this"></a> [this](#module\_this) | cloudposse/label/null | 0.25.0 |
-
 ## Resources
 
 No resources.
-
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -52,11 +48,12 @@ No resources.
 | <a name="input_stage"></a> [stage](#input\_stage) | ID element. Usually used to indicate role, e.g. 'prod', 'staging', 'source', 'build', 'test', 'deploy', 'release' | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. `{'BusinessUnit': 'XYZ'}`).<br>Neither the tag keys nor the tag values will be modified by this module. | `map(string)` | `{}` | no |
 | <a name="input_tenant"></a> [tenant](#input\_tenant) | ID element \_(Rarely used, not included by default)\_. A customer identifier, indicating who this instance of a resource is for | `string` | `null` | no |
-
 ## Outputs
 
-No outputs.
-<!-- END_TF_DOCS --> 
+| Name | Description |
+|------|-------------|
+| <a name="output_test"></a> [test](#output\_test) | Default output |
+<!-- END_TF_DOCS -->
 
 ## License
 The Apache-2.0 license
