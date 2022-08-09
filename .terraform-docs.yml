@@ -1,18 +1,32 @@
 formatter: markdown
 
+content: |-
+  ## Usage
+  ```hcl
+  {{ include "examples/basic/main.tf" }}
+  ```
+  {{ .Requirements }}
+  {{ .Providers }}
+  {{ .Modules }}
+  {{ .Resources }}
+  {{ .Inputs }}
+  {{ .Outputs }}
+
 output:
   file: README.md
   mode: replace
-  template: |-
-    ## Usage
+  # content: |-
+  #   ## Usage
 
-    ```hcl
-    {{ include "examples/basic/main.tf" }}
-    ```
+  #   ```hcl
+  #   {{ include "examples/basic/main.tf" }}
+  #   ```
+  template: |-
+    # terraform-module-template
 
     <!-- BEGIN_TF_DOCS -->
     {{ .Content }}
-    <!-- END_TF_DOCS --> 
+    <!-- END_TF_DOCS -->
 
     ## License
     The Apache-2.0 license
