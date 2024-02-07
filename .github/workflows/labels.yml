@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    paths:
+      - ".github/labels.yml"
+      - ".github/workflows/labels.yml"
 
 jobs:
   sync-labels:
@@ -14,9 +18,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync labels
-        uses: micnncim/action-label-syncer@v1.3.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+        uses: crazy-max/ghaction-github-labeler@v5
         with:
-          manifest: .github/labels.yml
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          yaml-file: .github/labels.yml
+          dry-run: ${{ github.event_name == 'pull_request' }}
