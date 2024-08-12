@@ -14,7 +14,7 @@ jobs:
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.6
+          terraform_version: ~1.9
 
       - name: Terraform Init
         run: terraform init
@@ -25,5 +25,5 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           fail_on_error: "true"
-          filter_mode: "diff_context"
+          filter_mode: diff_context
           flags: "--module"

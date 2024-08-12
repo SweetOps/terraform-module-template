@@ -5,10 +5,14 @@ updates:
     schedule:
       interval: "weekly"
     labels:
-      - "chore"
+      - ci
+    commit-message:
+      prefix: ci
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "weekly"
     labels:
-      - "chore"
+      - build
+    commit-message:
+      prefix: build

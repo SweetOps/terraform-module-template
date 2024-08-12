@@ -19,9 +19,8 @@ jobs:
           output-file: README.md
           config-file: ./examples/basic/.terraform-docs.yml
 
-      - name: Render terraform docs inside the README.md
+      - name: Render terraform docs
         uses: terraform-docs/gh-actions@v1.2.0
         with:
-          working-dir: .
+          working-dir: .,examples/basic
           git-push: "true"
-          output-file: README.md
