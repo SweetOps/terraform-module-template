@@ -7,7 +7,6 @@ jobs:
   trivy:
     name: trivy
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,6 +23,7 @@ jobs:
         uses: reviewdog/action-trivy@v1
         with:
           trivy_command: config
+          trivy_target: .
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           filter_mode: diff_context
