@@ -4,10 +4,16 @@
 ## Usage
 ```hcl
 module "aweasome_module" {
-  source    = "../../"
-  name      = "aweasome"
-  stage     = "production"
-  namespace = "sweetops"
+  source     = "../../"
+  name       = "aweasome"
+  stage      = "production"
+  namespace  = "sweetops"
+  attributes = var.attributes
+}
+
+output "id" {
+  value       = module.aweasome_module.id
+  description = "ID"
 }
 ```
 ## Requirements
@@ -52,7 +58,7 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_test"></a> [test](#output\_test) | Default output |
+| <a name="output_id"></a> [id](#output\_id) | ID |
 <!-- END_TF_DOCS -->
 
 ## License
