@@ -51,6 +51,7 @@ jobs:
             * **chore**: No production code change
 
       - name: Add label to PR
+        if: github.actor != 'dependabot[bot]'
         uses: fuxingloh/multi-labeler@v4.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

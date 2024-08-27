@@ -1,4 +1,4 @@
-output "test" {
-  value       = local.enabled
-  description = "Default output"
+output "id" {
+  value       = module.this.id
+  description = "ID"
 }
